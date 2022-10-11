@@ -40,6 +40,8 @@ namespace ExcelAddInZoo
             Excel.Worksheet activeWorksheet = Globals.ThisAddIn.Application.ActiveSheet;
             Excel.Range startingCell = Globals.ThisAddIn.Application.ActiveCell;
 
+            activeWorksheet.Rows.Clear();
+
             int activeCellRow = startingCell.Row;
             int activeCellColumn = startingCell.Column;
 
