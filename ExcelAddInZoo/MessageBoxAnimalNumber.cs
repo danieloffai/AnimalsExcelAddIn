@@ -33,13 +33,13 @@ namespace ExcelAddInZoo
         {
             if (!int.TryParse(tboxAnimalNumber.Text, out int n))
             {
-                MessageBox.Show("Error", "Only whole numbers are accpeted!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Only whole numbers are accpeted!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
             if (n < 1 || n > 10)
             {
-                MessageBox.Show("Error", "Only numbers between 1 and 10 are allowed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Only numbers between 1 and 10 are allowed!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
